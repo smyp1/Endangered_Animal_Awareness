@@ -1,0 +1,24 @@
+{
+  "name": "endangered_animal_awareness",
+  "version": "1.0.0",
+  "description": "## Date: 07/24/22",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smyp1/Endangered_Animal_Awareness.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smyp1/Endangered_Animal_Awareness/issues"
+  },
+  "homepage": "https://github.com/smyp1/Endangered_Animal_Awareness#readme",
+  "dependencies": {
+    "mongoose": "^6.4.6"
+  }
+}
