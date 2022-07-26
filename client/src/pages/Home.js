@@ -9,7 +9,7 @@ const Home = (props) => {
     "https://i.imgur.com/I4StiOj.jpeg",
     "https://i.imgur.com/fCKmaVW.jpeg",
     "https://i.imgur.com/ary1e9E.jpeg",
-    "https://i.imgur.com/3mEsqM4.jpeg",
+    "https://i.imgur.com/51On8Zb.jpeg",
     "https://i.imgur.com/pOFmxXU.jpeg",
     "https://i.imgur.com/TQXT2ta.jpeg",
   ];
@@ -22,7 +22,7 @@ const Home = (props) => {
       } else {
         setCurrentIndex(currentIndex + 1);
       }
-    }, 5000);
+    }, 7000);
     return () => clearInterval(intervalId);
   }, [currentIndex, images.length]);
 
@@ -31,7 +31,12 @@ const Home = (props) => {
       <div>
         <img
           id="homepage-img"
-          style={{ display: "block", maxWidth: "100%" }}
+          style={{
+            margin: "auto",
+            height: "500px",
+            display: "block",
+            maxWidth: "75%",
+          }}
           src={images[currentIndex]}
           alt="logo"
         />
