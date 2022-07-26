@@ -6,6 +6,7 @@ const Animal = new Schema(
     name: { type: String, required: true },
     danger_level: { type: String, required: true },
     biome: { type: Schema.Types.ObjectId, ref: "Biome" },
+    continent: { type: Schema.Types.ObjectId, ref: "Continent" },
   },
   { timestamps: true }
 );
