@@ -9,14 +9,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 
 function App() {
-  const initialState = {
-    name: "",
-    link: "",
-    descrption: "",
-    image: "",
-  };
   const [charities, setCharities] = useState([]);
-  const [newCharity, setNewCharity] = useState(initialState);
 
   useEffect(() => {
     const getCharities = async () => {
@@ -26,14 +19,6 @@ function App() {
     getCharities();
   }, []);
 
-  const handleChange = (e) => {
-    setNewCharity({ ...newCharity, [e.target.name]: e.target.value });
-  };
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log(newCharity);
-    setNewCharity(initialState);
-  };
   return (
     <div className="App">
       <header>
