@@ -7,7 +7,7 @@ import About from "./pages/About";
 import Animals from "./pages/Animals";
 import axios from "axios";
 import { useState, useEffect } from "react";
-
+import Charity from "./components/Charity";
 function App() {
   const [charities, setCharities] = useState([]);
 
@@ -31,6 +31,7 @@ function App() {
             path="/charities"
             element={<Charities charities={charities} />}
           />
+          <Route path="charities/:id" element={<Charity />} />
           <Route path="/about" element={<About />} />
           <Route path="/animals" element={<Animals />} />
         </Routes>
