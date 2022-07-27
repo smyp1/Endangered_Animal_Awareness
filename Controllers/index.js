@@ -3,6 +3,7 @@ const Continent = require("../Models/Continents");
 const Biome = require("../Models/Biomes");
 const Animal = require("../Models/Animals");
 
+//Charities
 const createCharity = async (req, res) => {
   try {
     const charity = await new Charity(req.body);
@@ -58,6 +59,7 @@ const deleteCharity = async (req, res) => {
   }
 };
 
+//Continents
 const createContinent = async (req, res) => {
   try {
     const continent = await new Continent(req.body);
@@ -117,6 +119,7 @@ const deleteContinent = async (req, res) => {
   }
 };
 
+//Biomes
 const createBiome = async (req, res) => {
   try {
     const biome = await new Biome(req.body);
@@ -169,6 +172,8 @@ const deleteBiome = async (req, res) => {
     return res.status(500).json({ error: error.message });
   }
 };
+
+//Animals
 const createAnimal = async (req, res) => {
   try {
     const animal = await new Animal(req.body);
