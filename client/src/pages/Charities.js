@@ -1,3 +1,5 @@
+import CharityForms from "../components/CharityForms";
+
 const Charities = (props) => {
   return (
     <div className="main">
@@ -16,6 +18,7 @@ const Charities = (props) => {
           </div>
         ))}
       </div>
+      <CharityForms />
     </div>
   );
 };
