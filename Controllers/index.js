@@ -22,7 +22,6 @@ const getAllCharities = async (req, res) => {
 };
 
 const getCharityById = async (req, res) => {
-  console.log("this route is being hit");
   try {
     const { id } = req.params;
     console.log(id);

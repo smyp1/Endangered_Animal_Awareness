@@ -14,36 +14,36 @@ const Charity = (props) =>{
   const [charity, setCharity]=useState("")
 
 useEffect(()=>{
-  console.log(`http://localhost:3001/api/charities/${id}`)
-  const getCharityId = async()=>{
+
+  const getCharity = async()=>{
     let res = await axios.get(`http://localhost:3001/api/charities/${id}`)
-    console.log(res)
-    
     setCharity(res.data.charity)
   }
-  console.log(id)
-  getCharityId()
-},[])
+  getCharity()
+},[id])
 
 const handleChange = (e) => {
     setUpdateCharity({ ...updateCharity, [e.target.id]: e.target.value });
   }; 
+
   const handleSubmit = async(event) => {
     event.preventDefault();
     let res = await axios.put(`http://localhost:3001/api/charities/${id}`, updateCharity)
-    console.log(res);
-    setUpdateCharity(initialState);
+    setUpdateCharity(res.data.charity);
   };
-  const deleteCharity = async(event) =>{
-    let res = await axios.delete(`http:localhost:3001/api/charities/${id}`)
+
+  const deleteCharity = async()=>{
+      let res = await axios.delete(`http://localhost:3001/api/charities/${id}`)
+    setCharity(res.data.charity)
   }
 return(
   <div className="main">
     <div>
-    <img src={charity.image} style={{maxWidth:"50%"}}/>
+    <img src={charity.image} style={{maxWidth:"50%"}  } alt="Logo"/>
     <h1>{charity.name}</h1>
     <h3>{charity.description}</h3>
     <a href={charity.link}>{charity.link}</a>
+  <button onClick={()=> deleteCharity()}> delete</button>
   </div>
 <div>
 <form onSubmit={handleSubmit}>

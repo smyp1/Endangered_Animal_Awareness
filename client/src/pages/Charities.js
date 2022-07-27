@@ -1,10 +1,12 @@
 import CharityForms from "../components/CharityForms";
 import { useNavigate } from "react-router-dom";
+
 const Charities = (props) => {
   let navigate = useNavigate();
   const showCharity = (id) => {
     navigate(`${id}`);
   };
+
   return (
     <div className="main">
       <div className="title">
@@ -17,7 +19,7 @@ const Charities = (props) => {
               <img src={charity.image} alt="logo" />
               <h2>{charity.name}</h2>
               <h3>{charity.description}</h3>
-              <a href={charity.link}>{charity.link}</a>
+              <h5>{charity.link}</h5>
               <button onClick={() => showCharity(charity._id)}>
                 Show details
               </button>
