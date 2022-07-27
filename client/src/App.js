@@ -4,7 +4,7 @@ import Nav from "./components/Nav";
 import Home from "./pages/Home";
 import Charities from "./pages/Charities";
 import About from "./pages/About";
-// import Animals from ".pages/Animals";
+import Animals from "./pages/Animals";
 import axios from "axios";
 import { useState, useEffect } from "react";
 
@@ -31,7 +31,8 @@ function App() {
             path="/charities"
             element={<Charities charities={charities} />}
           />
-          <Route path="/About" element={<About />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/animals" element={<Animals />} />
         </Routes>
       </main>
     </div>
