@@ -6,7 +6,7 @@ router.get("/", (req, res) => res.send("This is the root!"));
 //Routes for charities
 router.post("/charities", controllers.createCharity);
 router.get("/charities", controllers.getAllCharities);
-router.get("/charities/:id");
+router.get("/charities/:id", controllers.getCharityById);
 router.put("/charities/:id", controllers.updateCharity);
 router.delete("/charities/:id", controllers.deleteCharity);
 

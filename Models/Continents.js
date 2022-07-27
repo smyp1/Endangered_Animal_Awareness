@@ -8,4 +8,4 @@ const Continent = new Schema(
   },
   { timestamps: true }
 );
-module.exports = mongoose.model("Continent", Continent);
+module.exports = mongoose.model("continent", Continent);

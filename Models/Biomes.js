@@ -9,4 +9,4 @@ const Biome = new Schema(
   },
   { timestamps: true }
 );
-module.exports = mongoose.model("Biome", Biome);
+module.exports = mongoose.model("biome", Biome);

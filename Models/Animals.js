@@ -10,4 +10,4 @@ const Animal = new Schema(
   },
   { timestamps: true }
 );
-module.exports = mongoose.model("Animal", Animal);
+module.exports = mongoose.model("animal", Animal);

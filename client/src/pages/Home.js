@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const Home = (props) => {
+const Home = () => {
   const images = [
     "https://i.imgur.com/VyT7hQ3.jpeg",
     "https://i.imgur.com/X5ZGeeN.jpeg",
@@ -33,6 +33,7 @@ const Home = (props) => {
           id="homepage-img"
           style={{
             margin: "auto",
+            padding: "0, auto",
             height: "500px",
             display: "block",
             maxWidth: "75%",

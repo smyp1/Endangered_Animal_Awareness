@@ -1,13 +1,15 @@
 import "./styles/App.css";
 import { Routes, Route } from "react-router-dom";
-import axios from "axios";
-import { useState, useEffect } from "react";
 import Nav from "./components/Nav";
 import Home from "./pages/Home";
 import Charities from "./pages/Charities";
+import About from "./pages/About";
+// import Animals from ".pages/Animals";
+import axios from "axios";
+import { useState, useEffect } from "react";
+
 function App() {
   const [charities, setCharities] = useState([]);
-
   useEffect(() => {
     const getCharities = async () => {
       const res = await axios.get("http://localhost:3001/api/charities");
@@ -15,7 +17,6 @@ function App() {
     };
     getCharities();
   }, []);
-
   return (
     <div className="App">
       <header>
@@ -27,7 +28,8 @@ function App() {
           <Route
             path="/charities"
             element={<Charities charities={charities} />}
-          ></Route>
+          />
+          <Route path="/About" element={<About />} />
         </Routes>
       </main>
     </div>

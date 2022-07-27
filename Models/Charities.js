@@ -11,4 +11,4 @@ const Charity = new Schema(
   { timestamps: true }
 );
 
-module.exports = mongoose.model("Charity", Charity);
+module.exports = mongoose.model("charity", Charity);
