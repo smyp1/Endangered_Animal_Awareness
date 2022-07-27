@@ -17,9 +17,15 @@ useEffect(()=>{
   getCharityId()
 },[])
 return(
-  <div>
-    <img src={charity.image}/>
+  <div className="main">
+    <div>
+    <img src={charity.image} style={{maxWidth:"50%"}}/>
+    <h1>{charity.name}</h1>
+    <h3>{charity.description}</h3>
+    <a href={charity.link}>{charity.link}</a>
   </div>
+
+</div>
 )
 }
 

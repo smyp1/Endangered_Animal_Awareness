@@ -17,7 +17,7 @@ const Charities = (props) => {
               <img src={charity.image} alt="logo" />
               <h2>{charity.name}</h2>
               <h3>{charity.description}</h3>
-              <h4>{charity.link}</h4>
+              <a href={charity.link}>{charity.link}</a>
               <button onClick={() => showCharity(charity._id)}>
                 Show details
               </button>
