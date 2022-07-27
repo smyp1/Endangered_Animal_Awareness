@@ -7,11 +7,11 @@ const Charities = (props) => {
       <div className="mapper">
         {props.charities.charity.map((props, index) => (
           <div key={index}>
-            <div>
-              <img src={props.image} alt="" />
-              <h3>{props.name}</h3>
+            <div className="charity">
+              <img src={props.image} alt="logo" />
+              <h2>{props.name}</h2>
               <h3>{props.description}</h3>
-              <h3>{props.link}</h3>
+              <h4>{props.link}</h4>
             </div>
           </div>
         ))}

@@ -10,6 +10,13 @@ import { useState, useEffect } from "react";
 
 function App() {
   const [charities, setCharities] = useState([]);
+  const [newCharity, setNewCharity] = useState({
+    name: "",
+    link: "",
+    descrption: "",
+    image: "",
+  });
+
   useEffect(() => {
     const getCharities = async () => {
       const res = await axios.get("http://localhost:3001/api/charities");
@@ -17,6 +24,7 @@ function App() {
     };
     getCharities();
   }, []);
+
   return (
     <div className="App">
       <header>
