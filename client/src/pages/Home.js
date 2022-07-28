@@ -29,7 +29,7 @@ const Home = () => {
   return (
     <body className="home_page">
       <div className="home">
-        <h1 className="home">Welcome!</h1>
+        <h1 className="home">Help The Animals</h1>
         <div>
           <img
             id="homepage-img"
