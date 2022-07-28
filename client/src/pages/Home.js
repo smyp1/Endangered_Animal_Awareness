@@ -22,7 +22,7 @@ const Home = () => {
       } else {
         setCurrentIndex(currentIndex + 1);
       }
-    }, 7000);
+    }, 4000);
     return () => clearInterval(intervalId);
   }, [currentIndex, images.length]);
 

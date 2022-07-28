@@ -16,7 +16,7 @@ const createCharity = async (req, res) => {
 const getAllCharities = async (req, res) => {
   try {
     const charity = await Charity.find();
-    return res.status(200).json({ charity });
+    return res.status(200).json(charity);
   } catch (error) {
     return res.status(500).json({ error: error.message });
   }
