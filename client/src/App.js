@@ -10,6 +10,7 @@ import { useState, useEffect } from "react";
 import Charity from "./components/Charity";
 function App() {
   const [charities, setCharities] = useState([]);
+  const [animals, setAnimals] = useState([]);
 
   useEffect(() => {
     const getCharities = async () => {
@@ -19,6 +20,14 @@ function App() {
     getCharities();
   }, []);
 
+  useEffect(() => {
+    const getAnimals = async () => {
+      const res = await axios.get("http://localhost:3001/api/animals");
+      console.log(res.data);
+      setAnimals(res.data);
+    };
+    getAnimals();
+  }, []);
   return (
     <div className="App">
       <header>
@@ -33,7 +42,7 @@ function App() {
           />
           <Route path="charities/:id" element={<Charity />} />
           <Route path="/about" element={<About />} />
-          <Route path="/animals" element={<Animals />} />
+          <Route path="/animals" element={<Animals animals={animals} />} />
         </Routes>
       </main>
     </div>
