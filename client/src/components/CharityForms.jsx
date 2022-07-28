@@ -17,6 +17,7 @@ const initialState = {
     let res = await axios.post("http://localhost:3001/api/charities", newCharity)
     console.log(res);
     setNewCharity(initialState);
+    window.location.reload(false)
   };
 
 

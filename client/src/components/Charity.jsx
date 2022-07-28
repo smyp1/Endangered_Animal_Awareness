@@ -1,8 +1,10 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Charity = (props) =>{
+  let navigate = useNavigate()
   let {id} = useParams()
   const initialState = {
     name: "",
@@ -30,11 +32,15 @@ const handleChange = (e) => {
     event.preventDefault();
     let res = await axios.put(`http://localhost:3001/api/charities/${id}`, updateCharity)
     setUpdateCharity(res.data.charity);
+    navigate("/charities")
+    window.location.reload(false)
   };
 
   const deleteCharity = async()=>{
       let res = await axios.delete(`http://localhost:3001/api/charities/${id}`)
     setCharity(res.data.charity)
+    navigate("/charities")
+    window.location.reload(false)
   }
 return(
   <div className="main">
@@ -43,6 +49,7 @@ return(
     <h1>{charity.name}</h1>
     <h3>{charity.description}</h3>
     <a href={charity.link}>{charity.link}</a>
+    <h1> </h1>
   <button onClick={()=> deleteCharity()}> delete</button>
   </div>
 <div>
