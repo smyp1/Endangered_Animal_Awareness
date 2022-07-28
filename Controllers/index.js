@@ -185,8 +185,8 @@ const createAnimal = async (req, res) => {
 };
 const getAllAnimals = async (req, res) => {
   try {
-    const animal = await Animal.find();
-    return res.status(200).json({ animal });
+    const animals = await Animal.find();
+    return res.status(200).json(animals);
   } catch (error) {
     return res.status(500).json({ error: error.message });
   }

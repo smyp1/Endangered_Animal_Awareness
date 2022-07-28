@@ -3,10 +3,8 @@ const mongoose = require("mongoose");
 require("dotenv").config();
 let MONGODB_URI = `mongodb+srv://smyp123:${process.env.MONGODBPASSWORD}@cluster0.yekvopw.mongodb.net/test`;
 
-let dbUrl =
-  process.env.NODE_ENV === "production"
-    ? MONGODB_URI
-    : "mongodb://0.0.1:27017/test";
+let dbUrl = MONGODB_URI;
+
 mongoose
   .connect(dbUrl)
   .then(() => {

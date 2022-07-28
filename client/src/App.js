@@ -19,7 +19,7 @@ function App() {
     };
     const getAnimals = async () => {
       const res = await axios.get("http://localhost:3001/api/animals");
-      console.log();
+      console.log(res.data);
       setAnimals(res.data);
     };
     getCharities();

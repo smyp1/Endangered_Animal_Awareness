@@ -13,7 +13,7 @@ const Charities = (props) => {
         <h1>Charities</h1>
       </div>
       <div className="mapper">
-        {props.charities.charity.map((charity, index) => (
+        {props.charities.map((charity, index) => (
           <div key={index}>
             <div className="charity">
               <img src={charity.image} alt="logo" />
