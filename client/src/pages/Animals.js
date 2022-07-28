@@ -3,7 +3,7 @@ const Animals = (props) => {
     <body className="animal_page">
       <div>
         <h1>Animals</h1>
-        <div>
+        <div className="animal">
           {props.animals.map((animals, index) => (
             <div key={index}>
               <div>
