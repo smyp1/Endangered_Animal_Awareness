@@ -5,7 +5,7 @@ let MONGODB_URI = `mongodb+srv://smyp123:${process.env.MONGODBPASSWORD}@cluster0
 
 let dbUrl =
   process.env.NODE_ENV === "production"
-    ? process.eventNames.MONGODB_URI
+    ? MONGODB_URI
     : "mongodb://0.0.1:27017/test";
 mongoose
   .connect(dbUrl)
