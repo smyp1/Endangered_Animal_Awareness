@@ -17,17 +17,15 @@ function App() {
       const res = await axios.get("http://localhost:3001/api/charities");
       setCharities(res.data);
     };
-    getCharities();
-  }, []);
-
-  useEffect(() => {
     const getAnimals = async () => {
       const res = await axios.get("http://localhost:3001/api/animals");
-      console.log(res.data);
+      console.log();
       setAnimals(res.data);
     };
+    getCharities();
     getAnimals();
   }, []);
+
   return (
     <div className="App">
       <header>
