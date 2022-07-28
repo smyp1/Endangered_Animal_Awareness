@@ -27,25 +27,25 @@ const Home = () => {
   }, [currentIndex, images.length]);
 
   return (
-    <div className="home">
-      <div>
-        <img
-          id="homepage-img"
-          style={{
-            margin: "auto",
-            padding: "0, auto",
-            height: "500px",
-            display: "block",
-            maxWidth: "75%",
-          }}
-          src={images[currentIndex]}
-          alt="logo"
-        />
-      </div>
-      <div id="home-greetings">
+    <body className="home_page">
+      <div className="home">
         <h1 className="home">Welcome!</h1>
+        <div>
+          <img
+            id="homepage-img"
+            style={{
+              margin: "auto",
+              padding: "0, auto",
+              height: "500px",
+              display: "block",
+              maxWidth: "75%",
+            }}
+            src={images[currentIndex]}
+            alt="logo"
+          />
+        </div>
       </div>
-    </div>
+    </body>
   );
 };
 
