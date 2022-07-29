@@ -40,10 +40,10 @@
 
 ## **_Images_**
 
-![image](https://imgur.com/wiji9kQ)
-![image](https://imgur.com/1YbsTRm)
-![image](https://imgur.com/JGiiXA9)
-![image](https://imgur.com/xtEQqMR)
+![home](https://imgur.com/wiji9kQ)
+![about](https://imgur.com/1YbsTRm)
+![charity](https://imgur.com/JGiiXA9)
+![animals](https://imgur.com/xtEQqMR)
 
 ---
 
