@@ -43,6 +43,7 @@ const handleChange = (e) => {
     window.location.reload(false)
   }
 return(
+  <body className="char">
   <div className="main">
     <div>
     <img src={charity.image} style={{maxWidth:"50%"}  } alt="Logo"/>
@@ -65,7 +66,7 @@ return(
     <button type="submit">Submit</button>
   </form>
 </div>
-</div>
+</div></body>
 )
 }
 

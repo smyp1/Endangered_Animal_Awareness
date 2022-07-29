@@ -12,6 +12,17 @@ const Home = () => {
     "https://i.imgur.com/51On8Zb.jpeg",
     "https://i.imgur.com/pOFmxXU.jpeg",
     "https://i.imgur.com/TQXT2ta.jpeg",
+    "https://i.imgur.com/49I59VE.jpeg",
+    "https://i.imgur.com/X1nNFRb.jpeg",
+    "https://i.imgur.com/D1eXsrX.jpeg",
+    "https://i.imgur.com/lFWYpo7.jpeg",
+    "https://i.imgur.com/qkTgCvz.jpeg",
+    "https://i.imgur.com/8lVAchQ.jpeg",
+    "https://i.imgur.com/zQmOQ2r.jpeg",
+    "https://i.imgur.com/dUyW3MX.jpeg",
+    "https://i.imgur.com/eAAWup0.jpeg",
+    "https://i.imgur.com/bWCKGxc.jpeg",
+    "https://i.imgur.com/IM5MCaQ.jpeg",
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -39,11 +50,13 @@ const Home = () => {
               height: "500px",
               display: "block",
               maxWidth: "75%",
+              borderRadius: "20%",
             }}
             src={images[currentIndex]}
             alt="logo"
           />
         </div>
+        <h1>Everyone can do there part.</h1>
       </div>
     </body>
   );

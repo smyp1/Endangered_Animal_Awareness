@@ -6,31 +6,69 @@
   max-width: 50%;
 }
 
-body{
-  background-color: blueviolet;
-
+body {
+  background-image: url(https://i.imgur.com/cj4Ke9U.jpeg);
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: seashell;
 }
 
 body .about_page{
-background-color: darkgreen;
-font-size: xx-large;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
-;
-font-style: italic;
+  background-image: url(https://i.pinimg.com/originals/5c/d8/8c/5cd88c23ca4d97f5a925ff83bcf687d1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0 auto;
+  padding: 0 auto;
+  font-size: 30px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-style: italic;
+  margin: 0 auto;
+  padding: 258px 100px;
+}
+.about{
+  color: #646060;
+  background: #333333;
+  text-shadow: rgb(87, 86, 86) 0px 0px 5px, rgb(83, 83, 83) 0px 0px 10px, rgb(88, 85, 85) 0px 0px 15px, #248d0f 0px 0px 20px, #17790e 0px 0px 30px, #16be24 0px 0px 40px, #009921 0px 0px 50px, #1abb42 0px 0px 75px;
+  color: #ebe3e3;
+  background: #333333;
 }
 
 body .charity_page{
-  background-color: aqua;
+  background-image: url(https://wallpaperaccess.com/full/250763.jpg);
+  margin: 0 auto;
+  padding: 20px 10px;
 }
+.char{
+  background-image: url(https://wallpaperaccess.com/full/250763.jpg);;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+.mapper{
+  color: #FFFFFF;
+  text-shadow: #474747 3px 5px 2px;
+  color: #FFFFFF;
 
+}
+.animal_pics{
+    max-width: 30%;
+    min-width: 30%;
+    max-height: 30%;
+    min-height: 30%;
+    border-radius: 15%;
+}
 body .animal_page{
   background-image: url(https://i.imgur.com/C9DX5lY.jpeg);
   background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: aliceblue;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 header{
-  background-color:coral;
+  background-image:url(https://i.imgur.com/Bq4ZxnY.jpeg) ;
   display: flex;
   justify-content: flex-end;
 }
@@ -42,18 +80,14 @@ button{
   width: 90px;
   background-color:darkblue;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: crimson;
   font-size: large;
   font-style:italic;
   font-weight: 1000;
+  -webkit-box-shadow: inset -1px 3px 8px 5px #5d9ee9e8, 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0); 
+  box-shadow: inset -1px 3px 8px 5px #7baae0, 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
+  background: #026eb6;
 }
-.animal_pics{
-    max-width: 30%;
-    min-width: 30%;
-    max-height: 30%;
-    min-height: 30%;
-    border-radius: 15%;
-}
+
 form{
   display: grid;
   max-width: 250px;
