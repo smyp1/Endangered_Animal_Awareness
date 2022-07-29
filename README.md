@@ -40,8 +40,14 @@
 
 ## **_Images_**
 
+![image](https://imgur.com/wiji9kQ)
+![image](https://imgur.com/1YbsTRm)
+![image](https://imgur.com/JGiiXA9)
+![image](https://imgur.com/xtEQqMR)
+
 ---
 
 ## **_Credits_**
 
-**_World WildLife Fund for the list of endangered animals _**
+**_World WildLife Fund for the list of endangered animals_**
+**_Curious Archive for inspiration_**
