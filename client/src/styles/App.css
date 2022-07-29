@@ -8,7 +8,7 @@
 
 body {
   background-image: url(https://i.imgur.com/cj4Ke9U.jpeg);
-  background-size: 100%;
+  background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   color: seashell;
@@ -36,6 +36,7 @@ body .about_page{
 
 body .charity_page{
   background-image: url(https://wallpaperaccess.com/full/250763.jpg);
+  background-size: cover;
   margin: 0 auto;
   padding: 20px 10px;
 }
@@ -59,7 +60,7 @@ body .charity_page{
 }
 body .animal_page{
   background-image: url(https://i.imgur.com/C9DX5lY.jpeg);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: aliceblue;
