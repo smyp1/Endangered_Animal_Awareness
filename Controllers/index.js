@@ -195,7 +195,7 @@ const getAllAnimals = async (req, res) => {
 const getAnimalById = async (req, res) => {
   try {
     const { id } = req.params;
-    const animal = await Animal.findById();
+    const animal = await Animal.findById(id);
     if (animal) {
       return res.status(200).json({ animal });
     }
