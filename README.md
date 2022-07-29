@@ -50,5 +50,3 @@
 ## **_Credits_**
 
 **_World WildLife Fund for the list of endangered animals_**
-and
-**_Curious Archive for inspiration_**
