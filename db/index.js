@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 require("dotenv").config();
-let MONGODB_URI = `mongodb+srv://smyp123:${process.env.MONGODBPASSWORD}@cluster0.yekvopw.mongodb.net/test`;
+let MONGODB_URI = `mongodb+srv://cluster0.yekvopw.mongodb.net/test`;
 
 let dbUrl = MONGODB_URI;
 
